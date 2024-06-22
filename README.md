@@ -11,29 +11,29 @@ Using lodash for Deep Copy;
      
   Then, you can use the cloneDeep function to create deep copies of objects.
 
-Example with React State Management
-Here's an example of using lodash's cloneDeep to handle form state updates in a React component
+
+Here's an example of using lodash's cloneDeep to handle form state updates in a React component;
 
   
-  import React, { useState, useEffect } from 'react';
-  
-  import { cloneDeep } from 'lodash';
-  
-  
-  const initialForm = {
-    [EMAIL_KEY]: '',
-    [PASSWORD_KEY]: '',
-    nestedField: {
-      subField1: '',
-      subField2: '',
-    }
-  };
-  
-  export default function Login() {
-    const [form, setForm] = useState({
-      ...initialForm,
-      [EMAIL_KEY]: localStorage.getItem(EMAIL_KEY) || '',
-    });
+    import React, { useState, useEffect } from 'react';
+    
+    import { cloneDeep } from 'lodash';
+    
+    
+    const initialForm = {
+      [EMAIL_KEY]: '',
+      [PASSWORD_KEY]: '',
+      nestedField: {
+        subField1: '',
+        subField2: '',
+      }
+    };
+    
+    export default function Login() {
+      const [form, setForm] = useState({
+        ...initialForm,
+        [EMAIL_KEY]: localStorage.getItem(EMAIL_KEY) || '',
+      });
   
     const history = useHistory();
   
