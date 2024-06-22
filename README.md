@@ -35,7 +35,7 @@ Here's an example of using lodash's cloneDeep to handle form state updates in a 
         [EMAIL_KEY]: localStorage.getItem(EMAIL_KEY) || '',
       });
   
-    const history = useHistory();
+    
   
     const handleChange = (event) => {
       const { name, value, type } = event.target;
